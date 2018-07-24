@@ -1,0 +1,43 @@
+<menu>
+    <menuitem label='_t{Administration}'>
+        <icon>fa:university fa-fw</icon>
+        <menu>
+              <menuitem label='Cadastro de usuários'>
+                  <icon>fa:user fa-fw</icon>
+                  <action>SystemUserList</action>
+              </menuitem>
+              <menuitem label='Confirmações de participação'>
+                  <icon>fa:address-card fa-fw</icon>
+                  <action>LoginForm#method=onLogout#static=1</action>
+              </menuitem>
+              <menuitem label='Realização de sorteios'>
+                  <icon>fa:bolt fa-fw</icon>
+                  <action>LoginForm#method=onLogout#static=1</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+
+    <menuitem label='Troca de mensagens'>
+        <icon>fa:comments fa-fw</icon>
+        <menu>
+              <menuitem label='Seu e-mail'>
+                  <action>LoginForm#method=onLogout#static=1</action>
+                  <icon>fa:user fa-fw</icon>
+              </menuitem>
+              <menuitem label='Modo anonimo'>
+                  <action>LoginForm#method=onLogout#static=1</action>
+                  <icon>fa:user-secret fa-fw</icon>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Logout'>
+        <icon>fa:sign-out fa-fw</icon>
+        <menu>
+              <menuitem label='Logout'>
+                  <action>LoginForm#method=onLogout#static=1</action>
+                  <icon>fa:sign-out fa-fw</icon>
+              </menuitem>
+        </menu>
+    </menuitem>
+</menu>
