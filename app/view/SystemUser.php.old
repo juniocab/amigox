@@ -1,0 +1,19 @@
+<?php
+/**
+ * SystemUser Active Record
+ * 
+ */
+class SystemUser extends TRecord
+{
+    const TABLENAME = 'system_user';
+    const PRIMARYKEY= 'id';
+    const IDPOLICY =  'max'; // {max, serial}
+    
+    public function __construct($id = NULL)
+    {
+        parent::__construct($id);
+        parent::addAttribute('email');        
+        parent::addAttribute('password');
+    }
+}
+?>
